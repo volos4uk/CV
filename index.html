@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Oleksandr</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* light gray for screen */
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+        }
+        .a4-page {
+            width: 210mm;
+            min-height: 297mm;
+            background: white;
+            margin: 2rem auto;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+        }
+        /* Make the document editable smoothly */
+        [contenteditable="true"] {
+            outline: none;
+            transition: background-color 0.2s;
+        }
+        [contenteditable="true"]:hover {
+            background-color: rgba(59, 130, 246, 0.05); /* light blue tint on hover */
+            border-radius: 4px;
+        }
+        [contenteditable="true"]:focus {
+            background-color: rgba(59, 130, 246, 0.1);
+            box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+        }
+        @media print {
+            body {
+                background-color: white;
+                margin: 0;
+                padding: 0;
+            }
+            .a4-page {
+                width: 100%;
+                margin: 0;
+                box-shadow: none;
+                min-height: auto;
+                page-break-after: always;
+            }
+            .no-print {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+
+
+    <div class="a4-page overflow-hidden relative">
+        <!-- Sidebar -->
+        <div class="w-1/3 bg-slate-800 text-slate-200 p-8 flex flex-col">
+            <!-- Profile Info -->
+            <div class="mb-8 text-center">
+                <div class="w-32 h-32 bg-slate-600 rounded-full mx-auto mb-4 overflow-hidden border-4 border-slate-400 flex items-center justify-center relative">
+                    <img src="image.jpg" alt="Profile photo" class="w-full h-full object-cover">
+                </div>
+                <h1 class="text-2xl font-bold text-white tracking-wide uppercase">Oleksandr<br>Voloshchuk</h1>
+                <p class="text-blue-400 mt-2 font-medium tracking-wider text-sm uppercase">Junior Embedded / IoT Engineer</p>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="mb-8">
+                <h2 class="text-lg font-bold text-white border-b-2 border-blue-500 pb-1 mb-4 uppercase tracking-wider">Contact</h2>
+                <div class="text-sm space-y-3">
+                    <div class="flex items-start">
+                        <span class="mr-2">📍</span>
+                        <span>Udine area (Orzano), Italy</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="mr-2">📞</span>
+                        <span>+39 376 079 2782</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="mr-2">✉️</span>
+                        <span>nafanya281@gmail.com</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="mr-2">🔗</span>
+                        <span>github.com/volos4uk</span>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="mr-2">🔗</span>
+                        <span>linkedin.com/in/alexander-voloschuk-51883a224</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="mb-8">
+                <h2 class="text-lg font-bold text-white border-b-2 border-blue-500 pb-1 mb-4 uppercase tracking-wider">Skills</h2>
+                
+                <div class="mb-3">
+                    <h3 class="text-blue-400 text-xs font-bold uppercase mb-1">Embedded & Hardware</h3>
+                    <ul class="text-sm space-y-1 list-disc list-inside">
+                        <li>Microcontrollers: ESP32, ESP8266, Atmel, Arduino Mega</li>
+                        <li>Protocols: I2C, SPI, UART, BLE, Wi-Fi</li>
+                        <li>PCB Soldering & Prototyping</li>
+                        <li>Sensors & Actuators Integration</li>
+                    </ul>
+                </div>
+
+                <div class="mb-3">
+                    <h3 class="text-blue-400 text-xs font-bold uppercase mb-1">Software & Programming</h3>
+                    <ul class="text-sm space-y-1 list-disc list-inside">
+                        <li>C / C++ (PlatformIO, Arduino IDE)</li>
+                        <li>Python, JavaScript / Node.js</li>
+                        <li>Electron JS, HTML/CSS</li>
+                        <li>Fail-Safe Logic & State Machines</li>
+                    </ul>
+                </div>
+
+                <div class="mb-3">
+                    <h3 class="text-blue-400 text-xs font-bold uppercase mb-1">Tools & Design</h3>
+                    <ul class="text-sm space-y-1 list-disc list-inside">
+                        <li>3D Modeling: SolidWorks, Onshape</li>
+                        <li>3D Printing & Slicing</li>
+                        <li>Git, VS Code</li>
+                        <li>Linux Administration</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Languages Section -->
+            <div class="mb-8">
+                <h2 class="text-lg font-bold text-white border-b-2 border-blue-500 pb-1 mb-4 uppercase tracking-wider">Languages</h2>
+                <div class="text-sm space-y-3">
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>Ukrainian</span>
+                            <span class="text-blue-400 text-xs mt-1">Native</span>
+                        </div>
+                        <div class="w-full bg-slate-600 rounded-full h-1.5"><div class="bg-blue-400 h-1.5 rounded-full" style="width: 100%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>English</span>
+                            <span class="text-blue-400 text-xs mt-1">Intermediate (A2-B1)</span>
+                        </div>
+                        <div class="w-full bg-slate-600 rounded-full h-1.5"><div class="bg-blue-400 h-1.5 rounded-full" style="width: 50%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span>Italian</span>
+                            <span class="text-blue-400 text-xs mt-1">Beginner (Learning)</span>
+                        </div>
+                        <div class="w-full bg-slate-600 rounded-full h-1.5"><div class="bg-blue-400 h-1.5 rounded-full" style="width: 10%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="w-2/3 p-8 bg-white flex flex-col justify-between">
+            <div>
+                <!-- Profile / About Me -->
+                <div class="mb-6">
+                    <h2 class="text-xl font-bold text-slate-800 border-b-2 border-slate-200 pb-2 mb-3 uppercase tracking-wider flex items-center">
+                        <span class="text-blue-600 mr-2">👤</span> Profile
+                    </h2>
+                    <p class="text-slate-600 text-sm leading-relaxed text-justify">
+                        Passionate Embedded Software and Hardware Developer with a Master's degree in progress. Proven experience in full-cycle device prototyping—from 3D modeling and PCB soldering to writing C/C++ firmware and developing desktop UI applications. Experienced in ESP32/ESP8266 and IoT solutions. Seeking to leverage my technical expertise and problem-solving skills in a dynamic engineering team.
+                    </p>
+                    <div class="mt-3 inline-block bg-green-100 text-green-800 text-xs px-3 py-1.5 rounded font-semibold border border-green-200">
+                        ✅ Legal Status: Eligible to work in Italy (Permesso di soggiorno per protezione temporanea)
+                    </div>
+                </div>
+
+                <!-- Projects Section (Now Priority #1) -->
+                <div class="mb-6">
+                    <h2 class="text-xl font-bold text-slate-800 border-b-2 border-slate-200 pb-2 mb-3 uppercase tracking-wider flex items-center">
+                        <span class="text-blue-600 mr-2">🚀</span> Engineering Projects
+                    </h2>
+
+                    <div class="grid gap-4">
+                        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4 shadow-sm">
+                            <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+                                <div>
+                                    <h3 class="text-base font-bold text-slate-900">Autosynth: Automated Chemical Reactor</h3>
+                                    <p class="text-xs uppercase tracking-[0.18em] text-slate-500 mt-1">Embedded system | ESP32-S3 | C++ | Electron JS</p>
+                                </div>
+                            </div>
+                            <div class="mt-3 text-xs text-slate-600 space-y-2">
+                                <p>Engineered a full-stack automated chemical synthesis device with modular state-machine firmware and cooperative multitasking.</p>
+                                <p>Implemented strict Fail-Safe security (thermal runaway protection) and cascade PID controllers for precise heating.</p>
+                                <p>Built a custom asynchronous JSON communication link via USB/Wi-Fi and a state-driven desktop UI app.</p>
+                            </div>
+                        </div>
+
+                        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4 shadow-sm">
+                            <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+                                <div>
+                                    <h3 class="text-base font-bold text-slate-900">Pass Manager: Secure Input Device</h3>
+                                    <p class="text-xs uppercase tracking-[0.18em] text-slate-500 mt-1">Security hardware | ESP32-S3 | C++ | BLE/USB HID</p>
+                                </div>
+                                <a href="https://github.com/volos4uk/pass-manager" class="text-xs font-semibold text-blue-600 hover:text-blue-800">github.com/volos4uk/pass-manager</a>
+                            </div>
+                            <div class="mt-3 text-xs text-slate-600 space-y-2">
+                                <p>Built a security device emulating USB/BLE keyboard input with Morse code via capacitive touch sensors.</p>
+                                <p>Implemented DuckyScript payload execution and secure password management using ESP32 NVS storage.</p>
+                            </div>
+                        </div>
+
+                        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-4 shadow-sm">
+                            <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+                                <div>
+                                    <h3 class="text-base font-bold text-slate-900">Smart Hydroponic Tower</h3>
+                                    <p class="text-xs uppercase tracking-[0.18em] text-slate-500 mt-1">IoT project | ESP8266 | C++ | Telegram API</p>
+                                </div>
+                                <a href="https://github.com/volos4uk/Hydroponic-Tower" class="text-xs font-semibold text-blue-600 hover:text-blue-800">github.com/volos4uk/Hydroponic-Tower</a>
+                            </div>
+                            <div class="mt-3 text-xs text-slate-600 space-y-2">
+                                <p>Created an IoT watering tower with pump control, EEPROM configuration and remote monitoring.</p>
+                                <p>Integrated Telegram bot alerts for status updates, manual overrides and OTA firmware updates.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Section -->
+                <div class="mb-6">
+                    <h2 class="text-xl font-bold text-slate-800 border-b-2 border-slate-200 pb-2 mb-3 uppercase tracking-wider flex items-center">
+                        <span class="text-blue-600 mr-2">💼</span> Experience
+                    </h2>
+                    
+                    <div class="mb-3">
+                        <div class="flex justify-between items-baseline mb-1">
+                            <h3 class="text-md font-bold text-slate-800">Robotics & Programming Instructor</h3>
+                            <span class="text-xs font-semibold text-blue-600 bg-blue-50 px-2 py-1 rounded">09/2023 - 10/2025</span>
+                        </div>
+                        <div class="text-sm text-slate-500 font-medium italic mb-2">IT Step Academy, Chernivtsi, Ukraine</div>
+                        <ul class="text-xs text-slate-600 list-disc list-inside space-y-1">
+                            <li>Taught fundamentals of programming (C++, Python) and robotics to students, adapting complex technical concepts into practical lessons.</li>
+                            <li>Guided students in prototyping, soldering, and coding practical hardware projects using microcontrollers (Arduino, ESP).</li>
+                            <li>Maintained lab equipment, 3D printers, and resolved hardware/software technical issues.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Education Section -->
+                <div class="mb-4">
+                    <h2 class="text-xl font-bold text-slate-800 border-b-2 border-slate-200 pb-2 mb-3 uppercase tracking-wider flex items-center">
+                        <span class="text-blue-600 mr-2">🎓</span> Education
+                    </h2>
+                    
+                    <div class="mb-3">
+                        <div class="flex justify-between items-baseline mb-1">
+                            <h3 class="text-sm font-bold text-slate-800">Master's Degree in Computer Systems and Networks</h3>
+                            <span class="text-xs font-semibold text-blue-600 bg-blue-50 px-2 py-1 rounded">2025 - Present</span>
+                        </div>
+                        <div class="text-xs text-slate-600 font-medium">Yuriy Fedkovych Chernivtsi National University, Ukraine</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <div class="flex justify-between items-baseline mb-1">
+                            <h3 class="text-sm font-bold text-slate-800">Bachelor's Degree in Computer Systems and Networks</h3>
+                            <span class="text-xs font-semibold text-slate-500">2023 - 2025</span>
+                        </div>
+                        <div class="text-xs text-slate-600 font-medium">Yuriy Fedkovych Chernivtsi National University, Ukraine</div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-baseline mb-1">
+                            <h3 class="text-sm font-bold text-slate-800">Associate Degree in Software Engineering</h3>
+                            <span class="text-xs font-semibold text-slate-500">2019 - 2023</span>
+                        </div>
+                        <div class="text-xs text-slate-600 font-medium">Chernivtsi Industrial Professional College, Ukraine</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-auto pt-4">
+                <p class="text-[10px] text-slate-400 text-justify border-t border-slate-100 pt-2">
+                    Autorizzo il trattamento dei miei dati personali presenti nel cv ai sensi del Decreto Legislativo 30 giugno 2003, n. 196 "Codice in materia di protezione dei dati personali" e dell'art. 13 del GDPR (Regolamento UE 2016/679).
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
